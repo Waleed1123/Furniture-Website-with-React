@@ -1,6 +1,6 @@
 import "./App.css";
-
-function App() {
+import img from "./assets/hero-sofa.jpg"
+export function App() {
   return (
     <>
       <div className="container">
@@ -40,9 +40,54 @@ function App() {
           <button>Shop Now </button>
         </div>
         {/* Hero Boxes */}
-        <div className="box-container">
-        
+        <div className="box-container">{/* Boxes */}</div>
+        {/* Cards */}
+        <div className="cards-paerent">
+          <div className="card1 card">
+            <img src="./assets/hero-sofa.jpg" alt="" />
+            <span>
+              <p className="color-icon"></p>
+              <p className="shop-icon"></p>
+            </span>
+            <h4>Comfertable Sofa</h4>
+            <h4>$80.99</h4>
+          </div>
+          <div className="card2 card">
+            <img src="./assets/hero-sofa.jpg" alt="" />
+            <span>
+              <p className="color-icon"></p>
+              <p className="shop-icon"></p>
+            </span>
+            <h4>Elegent Slide Sofa</h4>
+            <h4>$80.99</h4>
+          </div>
+          <div className="card3 card">
+            <img src="./assets/hero-sofa.jpg" alt="" />
+            <span>
+              <p className="color-icon"></p>
+              <p className="shop-icon"></p>
+            </span>
+            <h4>Classy Padded Chair</h4>
+            <h4>$80.99</h4>
+          </div>
         </div>
+        {/* Luxurious Bed Part */}
+
+        <div className="luxurious-bed">
+          <div className="bed-text">
+            <h3>Luxurious Bed</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Ad distinctio asperiores odio nostrum reiciendis, iusto <br /> voluptatibus deserunt at dignissimos quasi!</p>
+            <p>$ 299</p>
+            <p>Icons</p>
+            <button>Buy Now</button>
+          </div>
+          <div className="bed-img">
+            <img src={img} alt="" />
+          </div>
+        </div>
+
+      
+      
       </div>
     </>
   );
